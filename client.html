@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/client.css">
+</head>
+<body>
+
+<header class="header">
+    <div>
+        <h1>Student Dashboard</h1>
+    </div>
+
+    <div>
+        <span id="studentName"></span>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+    </div>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <button class="nav-item active"
+                data-section="dashboard">
+            Dashboard
+        </button>
+
+        <button class="nav-item"
+                data-section="courses">
+            Available Courses
+        </button>
+
+        <button class="nav-item"
+                data-section="myCourses">
+            My Courses
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <section
+                id="dashboard"
+                class="section active">
+
+            <h2>Dashboard</h2>
+
+            <div class="cards-grid">
+
+                <div class="card">
+                    <h3>Total Courses</h3>
+                    <p id="totalCourses">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>My Courses</h3>
+                    <p id="totalMyCourses">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+                id="courses"
+                class="section">
+
+            <h2>Available Courses</h2>
+
+            <div
+                id="coursesContainer"
+                class="courses-grid">
+            </div>
+
+        </section>
+
+        <section
+                id="myCourses"
+                class="section">
+
+            <h2>My Courses</h2>
+
+            <div
+                id="myCoursesContainer"
+                class="courses-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="assets/js/client.js"></script>
+
+</body>
+</html>

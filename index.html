@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FRAMEZ</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/misc/logo.png" rel="icon">
+  <link href="assets/img/misc/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* تطبيق الخط على الموقع بشكل عام */
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    /* إذا كنت مُصر تستخدم * مع !important، لازم تستثني الأيقونات بالشكل ده: */
+    *:not(i):not([class^="bi-"]):not([class*=" bi-"]) {
+      font-family: 'Cairo', sans-serif !important;
+    }
+  </style>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- jQuery + Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">عن منصتنا</a></li>
+          <li><a href="#services">دوراتنا</a></li>
+          <li><a href="#logos">اراء طلابنا</a></li>
+          <li><a href="#portfolio">نتائج طلابنا</a></li>
+          <li><a href="#features"> مميزات المنصه</a></li>
+          <li><a href="#faq">اجابات اسألتك</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          <a href="client.html" class="login-btn"> حسابى</a>
+          <a href="about.html">من انا؟</a>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+    <div class="login-btn-wrapper">
+      <a href="login.html" class="login-btn">تسجيل الدخول</a>
+    </div>
+    <style>
+      .login-btn-wrapper {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        /* لو RTL خليها right */
+        z-index: 9999;
+      }
+
+      .login-btn {
+        background: #000000;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .login-btn:hover {
+        background: #084298;
+        color: #fff;
+      }
+    </style>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- تم تعديل المساحة هنا من col-lg-8 إلى col-lg-6 -->
+          <div class="col-lg-6 col-12 hero-visual order-lg-1 order-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="image-wrapper">
+              <img src="assets/img/illustration/image.png" alt="Creative Design" class="main-image">
+
+              <div class="floating-element top-left">
+                <img src="assets/img/illustration/Gemini_Generated_Image_6y1jod6y1jod6y1j.png" alt="Photoshop"
+                  class="software-logo"
+                  style="max-width: 200px; height: auto; width: 100%; max-width: clamp(50px, 20vw, 200px);">
+              </div>
+
+              <div class="floating-element bottom-right">
+                <img src="assets/img/illustration/—Pngtree—mathematical symbol pi_4361437.png" alt="Illustrator"
+                  class="software-logo"
+                  style="max-width: 170px; height: auto; width: 100%; max-width: clamp(45px, 18vw, 170px);">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- تم تكبير مساحة النص هنا من col-lg-4 إلى col-lg-6 -->
+          <div class="col-lg-6 col-12 hero-content order-lg-2 order-1" data-aos="fade-up" data-aos-delay="100"
+            dir="rtl">
+
+            <h1 class="title fw-bold" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px;">
+              م / <span style="color: #0dcaf0;">حسام سلطان</span>
+            </h1>
+
+            <div class="description" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 20px;">
+              <p>
+                شرح مبسط، وتدريب مستمر.. طريقك الأقصر لفهم 
+                <strong style="color: #0dcaf0;">الفيزياء</strong> 
+                وتحقيق التفوق الأكاديمي.
+              </p>
+              
+              <ul class="list-unstyled mt-4" style="font-size: 1.1rem; padding: 0; color: #e6f1ff;">
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill" style="color: #0dcaf0; margin-left: 10px; font-size: 1.2rem;"></i> 
+                  تأسيس شامل من الصفر وحتى مستوى أسئلة الامتحانات.
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill" style="color: #0dcaf0; margin-left: 10px; font-size: 1.2rem;"></i> 
+                  حل آلاف الأفكار والتدريب على النظام الجديد.
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-check-circle-fill" style="color: #0dcaf0; margin-left: 10px; font-size: 1.2rem;"></i> 
+                  امتحانات دورية ومتابعة مستمرة مع ولي الأمر.
+                </li>
+              </ul>
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+
+
+
+
+
+
+    <section id="about" class="about section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">عن منصتنا</span>
+        <h2>عن منصتنا</h2>
+        <p>منصة متخصصة في شرح وتبسيط مادة الفيزياء بأحدث الأساليب والتقنيات التعليمية</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-image-wrapper position-relative">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1315335250698323%2F&show_text=false&width=267&t=0"
+                width="100%" height="476" style="border:none; overflow:hidden; border-radius: 1rem;" scrolling="no"
+                frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+              </iframe>
+              <div class="mission-card"
+                style="margin-top: 100px; display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 15px;">
+                <div class="mission-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="mission-content" dir="rtl">
+                  <h4>رسالتنا</h4>
+                  <p>نقل مستواك في الفيزياء إلى قمة التفوق من خلال شرح وافٍ وتدريب مستمر.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-lg-4" dir="rtl">
+              <div class="tag-badge" data-aos="fade-up" data-aos-delay="100">معلومات عن المنصة</div>
+
+              <h2>
+                منصة تعليمية متطورة متخصصة في تأسيس وشرح مادة الفيزياء
+              </h2>
+
+              <div class="about-info">
+                <p>
+                  نحن نؤمن أن كل طالب قادر على التفوق في الفيزياء وحصد الدرجات النهائية إذا توفر له الشرح الصحيح
+                  والمتابعة الفعالة.
+                </p>
+
+              </div>
+
+              <h4 class="values-title">💡 رؤيتنا ورسالتنا</h4>
+
+              <div class="about-info">
+                <p><strong>الرؤية</strong><br>
+                  أن نكون المنصة الأولى والأكثر موثوقية في تعليم الفيزياء وتأهيل الطلاب للتفوق الأكاديمي.
+                </p>
+
+                <p><strong>الرسالة</strong><br>
+                  تطوير مستوى الطلاب من خلال حصص تفاعلية وتدريب مكثف على أحدث أنظمة الامتحانات.<br>
+                  نسعى لتحويل الفيزياء من مادة معقدة إلى تجربة ممتعة تساهم في تحقيق أحلام الطلاب.
+                </p>
+
+                <div class="values-list" data-aos="fade-up" data-aos-delay="500">
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">الاحترافية في الشرح</span>
+                  </div>
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">تبسيط المعلومة</span>
+                  </div>
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">التدريب المكثف</span>
+                  </div>
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">الدعم المستمر</span>
+                  </div>
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">المتابعة الدورية</span>
+                  </div>
+                  <div class="value-item">
+                    <div class="value-icon"><i class="bi bi-check2"></i></div>
+                    <span class="value-text">التطور المستمر</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- Services Section -->
+        <section id="services" dir="rtl" class="services section light-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <span class="description-title"> الدورات المميزة</span>
+            <h2>الدورات المميزة</h2>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+
+            <!-- تم التعديل هنا: إضافة كلاسات لعمل السلايدر (horizontal scroll) -->
+            <div class="d-flex flex-row flex-nowrap overflow-auto py-3 custom-slider" style="gap: 20px;">
+
+              <div class="card" style="width: 18rem; flex: 0 0 auto;">
+                <img src="assets/img/illustration/577069456_2833935533445501_6088316542517344796_n.jpg"
+                  class="card-img-top" alt="فيزياء تالتة ثانوي">
+                <div class="card-body">
+                  <h5 class="card-title">الصف الثالث الثانوي - الباب الأول</h5>
+                  <p class="card-text">شرح وتدريب شامل على (التيار الكهربي وقانون أوم وقانونا كيرشوف). تأسيس قوي لضمان
+                    فهم أعمق للكهربية.
+                    <br><strong style="color: #0dcaf0;">السعر: 150 جنيه</strong>
+                  </p>
+                  <a href="#" class="btn btn-info">اشترك الآن</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; flex: 0 0 auto;">
+                <img src="assets/img/illustration/667271726_2977867709052282_924664168926053633_n.jpg"
+                  class="card-img-top" alt="فيزياء تالتة ثانوي">
+                <div class="card-body">
+                  <h5 class="card-title">الصف الثالث الثانوي - الباب الثاني</h5>
+                  <p class="card-text">التأثير المغناطيسي للتيار الكهربي وأجهزة القياس. شرح مبسط لحركة الإلكترونات
+                    وقوانين المغناطيسية مع حل أسئلة النظام الجديد.
+                    <br><strong style="color: #0dcaf0;">السعر: 180 جنيه</strong>
+                  </p>
+                  <a href="#" class="btn btn-info">اشترك الآن</a>
+                </div>
+              </div>
+                <div class="card" style="width: 18rem; flex: 0 0 auto;">
+                <img src="assets/img/illustration/577069456_2833935533445501_6088316542517344796_n.jpg"
+                  class="card-img-top" alt="فيزياء تالتة ثانوي">
+                <div class="card-body">
+                  <h5 class="card-title">الصف الثالث الثانوي - الباب الأول</h5>
+                  <p class="card-text">شرح وتدريب شامل على (التيار الكهربي وقانون أوم وقانونا كيرشوف). تأسيس قوي لضمان
+                    فهم أعمق للكهربية.
+                    <br><strong style="color: #0dcaf0;">السعر: 150 جنيه</strong>
+                  </p>
+                  <a href="#" class="btn btn-info">اشترك الآن</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; flex: 0 0 auto;">
+                <img src="assets/img/illustration/667271726_2977867709052282_924664168926053633_n.jpg"
+                  class="card-img-top" alt="فيزياء تالتة ثانوي">
+                <div class="card-body">
+                  <h5 class="card-title">الصف الثالث الثانوي - الباب الثاني</h5>
+                  <p class="card-text">التأثير المغناطيسي للتيار الكهربي وأجهزة القياس. شرح مبسط لحركة الإلكترونات
+                    وقوانين المغناطيسية مع حل أسئلة النظام الجديد.
+                    <br><strong style="color: #0dcaf0;">السعر: 180 جنيه</strong>
+                  </p>
+                  <a href="#" class="btn btn-info">اشترك الآن</a>
+                </div>
+              </div>
+                <div class="card" style="width: 18rem; flex: 0 0 auto;">
+                <img src="assets/img/illustration/577069456_2833935533445501_6088316542517344796_n.jpg"
+                  class="card-img-top" alt="فيزياء تالتة ثانوي">
+                <div class="card-body">
+                  <h5 class="card-title">الصف الثالث الثانوي - الباب الأول</h5>
+                  <p class="card-text">شرح وتدريب شامل على (التيار الكهربي وقانون أوم وقانونا كيرشوف). تأسيس قوي لضمان
+                    فهم أعمق للكهربية.
+                    <br><strong style="color: #0dcaf0;">السعر: 150 جنيه</strong>
+                  </p>
+                  <a href="#" class="btn btn-info">اشترك الآن</a>
+                </div>
+              </div>
+
+
+
+              <!-- يمكنك إضافة كروت أخرى هنا بنفس الطريقة وسيقوم السلايدر باستيعابها -->
+
+            </div>
+
+          </div>
+        </section><!-- /Services Section -->
+
+        <!-- كود CSS البسيط لضبط شكل السلايدر وشريط التمرير -->
+        <style>
+          .custom-slider {
+            /* لتنعيم حركة السحب على الموبايل */
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 15px;
+            /* مساحة لشريط التمرير */
+          }
+
+          .custom-slider .card {
+            /* لضمان وقوف الكارت في المنتصف عند السحب */
+            scroll-snap-align: center;
+          }
+
+          /* تجميل شكل شريط التمرير (Scrollbar) ليكون متناسقاً */
+          .custom-slider::-webkit-scrollbar {
+            height: 8px;
+          }
+
+          .custom-slider::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+          }
+
+          .custom-slider::-webkit-scrollbar-thumb {
+            background: #0dcaf0;
+            /* لون يتماشى مع زر btn-info */
+            border-radius: 10px;
+          }
+
+          .custom-slider::-webkit-scrollbar-thumb:hover {
+            background: #0bacce;
+          }
+        </style>
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+        
+
+
+
+
+        <!-- Features Section -->
+        <section id="features" class="features section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up" dir="rtl">
+            <span class="description-title">مميزات المنصة</span>
+            <h2>مميزات المنصة</h2>
+            <p>منصة تعليمية متخصصة توفر شرحاً وافياً لمناهج الفيزياء بأحدث طرق التدريس مع الأستاذ حسام سلطان</p>
+          </div><!-- End Section Title -->
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="features-overview">
+              <div class="main-heading" data-aos="fade-right" data-aos-delay="200" dir="rtl">
+                <h2>شرح مبسط وشامل لمنهج الفيزياء</h2>
+                <p>نقدم شرحاً وافياً يجمع بين الفهم العميق للقوانين والتطبيق العملي في حل المسائل لضمان تفوقك في الفيزياء.
+                </p>
+                <p>الأستاذ حسام سلطان يرشدك خطوة بخطوة نحو استيعاب أصعب المفاهيم الفيزيائية بسهولة تامة.</p>
+                <p>ستتعلم أفضل طرق التفكير والتحليل التي تمكنك من التعامل مع كافة أفكار الامتحانات الحديثة.</p>
+                <p>خطط دراسية مرنة ومتابعة مستمرة تناسب جميع مستويات الطلاب للوصول إلى الدرجة النهائية.</p>
+                <div class="achievement-badges">
+                  <div class="achievement">
+                    <span class="achievement-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </span>
+                    <div class="achievement-info">
+                      <span class="achievement-value">1000+</span>
+                      <span class="achievement-label">طالب متفوق</span>
+                    </div>
+                  </div>
+                  <div class="achievement">
+                    <span class="achievement-icon">
+                      <i class="bi bi-clock-history"></i>
+                    </span>
+                    <div class="achievement-info">
+                      <span class="achievement-value">دعم مستمر</span>
+                      <span class="achievement-label">24/7 للأسئلة</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="features-card-wrapper" data-aos="fade-left" data-aos-delay="300">
+                <div class="features-row">
+                  <div class="feature-card feature-primary" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                      <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <div class="feature-details" dir="rtl">
+                      <h3>محتوى علمي دقيق</h3>
+                      <p>جميع محاضراتنا مصممة بعناية لتغطي كافة أجزاء المنهج ومطابقة لأحدث مواصفات الامتحانات.</p>
+                      <div class="feature-status active">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">متاح الآن</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                      <i class="bi bi-cloud-arrow-up"></i>
+                    </div>
+                    <div class="feature-details" dir="rtl">
+                      <h3>مشاهدة مرنة في أي وقت</h3>
+                      <p>ذاكر من أي مكان وفي أي وقت. جميع المحاضرات مسجلة ومتاحة بأعلى جودة لتراجعها وقتما تشاء.</p>
+                      <div class="feature-status active">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">متاح</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features-row">
+                  <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                      <i class="bi bi-database-check"></i>
+                    </div>
+                    <div class="feature-details" dir="rtl">
+                      <h3>بنك أسئلة وامتحانات شاملة</h3>
+                      <p>تدريب مستمر على أحدث أنماط الأسئلة والامتحانات لكسر رهبة الامتحان وقياس مستواك باستمرار.</p>
+                      <div class="feature-status active">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">متوفر</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feature-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-icon">
+                      <i class="bi bi-cpu"></i>
+                    </div>
+                    <div class="feature-details" dir="rtl">
+                      <h3>تقنيات شرح حديثة</h3>
+                      <p>نستخدم أحدث وسائل الإيضاح والمحاكاة التفاعلية لتبسيط التجارب الفيزيائية وتخيلها بشكل أفضل.</p>
+                      <div class="feature-status active">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">محدثة دائماً</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-features" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gx-4 gy-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="additional-feature-card" dir="rtl">
+                    <div class="icon-container">
+                      <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <h4>تأسيس شامل</h4>
+                    <p>كورسات تأسيسية في أساسيات الفيزياء والرياضيات لتأهيلك من الصفر وحتى مستوى التفوق.</p>
+                    <div class="feature-tag active">
+                      <i class="bi bi-check-circle"></i> نشط
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="additional-feature-card" dir="rtl">
+                    <div class="icon-container">
+                      <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <h4>متابعة دورية للأداء</h4>
+                    <p>تابع مستواك خطوة بخطوة مع تقارير أداء شاملة وتواصل مستمر مع ولي الأمر لضمان تقدمك.</p>
+                    <div class="feature-tag active">
+                      <i class="bi bi-arrow-repeat"></i> مفعل
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="additional-feature-card" dir="rtl">
+                    <div class="icon-container">
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>تفوق دراسي أكيد</h4>
+                    <p>اكتسب الثقة والمهارات اللازمة للتعامل مع أصعب المسائل وتحقيق حلمك بالوصول لكليات القمة.</p>
+                    <div class="feature-tag active">
+                      <i class="bi bi-calendar-check"></i> جاهز
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section><!-- /Features Section -->
+
+
+
+        <section id="call-to-action" class="call-to-action section">
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="cta-wrapper">
+              <div class="cta-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col-lg-7">
+                  <div class="cta-content p-5" data-aos="fade-right" data-aos-delay="200" dir="rtl">
+                    <span class="badge-custom" data-aos="zoom-in" data-aos-delay="300">بدأ الحجز الآن</span>
+                    <h2 class="mt-4 mb-4">اضمن التفوق والدرجة النهائية في الفيزياء</h2>
+                    <p class="mb-4">انضم إلى آلاف الطلاب الذين كسروا حاجز الخوف من الفيزياء وحققوا أحلامهم. خطة دراسية متكاملة تأخذك من التأسيس إلى احتراف حل أصعب أسئلة النظام الحديث بثقة تامة.</p>
+
+                    <div class="row benefits-row mb-5">
+                      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="benefit-item">
+                          <div class="icon-box">
+                            <i class="bi bi-play-circle-fill"></i>
+                          </div>
+                          <div class="benefit-content">
+                            <h5>محاضرات شاملة ومتدرجة</h5>
+                            <p>شرح وافٍ لكل أجزاء المنهج مع التركيز على نواتج التعلم وفهم القوانين بعمق لتجنب الحفظ.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="benefit-item">
+                          <div class="icon-box">
+                            <i class="bi bi-pencil-square"></i>
+                          </div>
+                          <div class="benefit-content">
+                            <h5>امتحانات ومتابعة مستمرة</h5>
+                            <p>تطبيق عملي وامتحانات دورية على كل فصل لضمان استيعابك وتدريبك على شكل أسئلة آخر العام.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="action-buttons">
+                      <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-delay="600">احجز مكانك الآن</a>
+                      <a href="#" class="btn btn-outline" data-aos="fade-up" data-aos-delay="700">تفاصيل الاشتراك</a>
+                      <div class="guarantee-badge" data-aos="fade-up" data-aos-delay="800">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <span>طريقك للدرجة النهائية</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="cta-image-container" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/img/illustration/509988549_2703241686514887_5641935835654134535_n.jpg" alt="Illustration" class="img-fluid main-image">
+                    <div class="floating-element element-1">
+                      <i class="bi bi-star-fill"></i>
+                      <span>نسبة نجاح 99%</span>
+                    </div>
+                    <div class="floating-element element-2">
+                      <i class="bi bi-people-fill"></i>
+                      <span>آلاف الطلاب المتفوقين</span>
+                    </div>
+                    <div class="pattern-dots"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+ <!-- ----------------------------------------------------------------- -->
+        <section id="logos" style="padding-top: 75px; padding-bottom: 0px;">
+  <div class="container">
+    <div class="container section-title" data-aos="fade-up" style="margin-bottom: -60px;">
+      <span class="description-title">ماذا يقول الطلاب؟</span>
+      <h2>ماذا يقول الطلاب؟</h2>
+    </div>
+    <div class="owl-carousel logo-slider">
+      <!-- تأكد من أن مسارات هذه الصور صحيحة 100% في ملفات مشروعك -->
+      <div class="logo-v1"><img src="assets/img/logo/500738888_2681640628674993_1770361535859392737_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500739993_2681640535341669_4055456939853757868_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500742685_2681640312008358_9066658651720223698_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500761086_2681640402008349_6281952700930745665_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500764163_2681640458675010_7995260909559302917_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500765440_2681640558675000_6357572675331257265_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/500766757_2681640545341668_708015670245818013_n.jpg" alt="رأي الطالب"></div>
+      <div class="logo-v1"><img src="assets/img/logo/502423471_2681640612008328_3307093249718185246_n.jpg" alt="رأي الطالب"></div>
+    </div>
+  </div>
+</section>
+        <style>
+          .logo-v1 img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          }
+        </style>
+        <!-- ----------------------------------------------------------------------------- -->
+
+        <section id="faq" class="faq section">
+
+  <div class="container section-title" data-aos="fade-up" dir="rtl">
+    <span class="description-title">أسئلة شائعة</span>
+    <h2>أسئلة يتكرر طرحها</h2>
+    <p>جمعنا لك هنا أهم الإجابات على أسئلتك حول نظام المحاضرات، الامتحانات، وطرق الاشتراك في منصة الفيزياء</p>
+  </div>
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-start gy-4">
+
+      <!-- 1. قسم الأسئلة (تم نقله للأعلى ليظهر أولاً في الموبايل) -->
+      <div class="col-lg-7">
+        <div class="faq-tabs">
+          <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill"
+                data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq"
+                aria-selected="true" dir="rtl">استفسارات عامة</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill"
+                data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq"
+                aria-selected="false" dir="rtl">المنهج والمحاضرات</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill"
+                data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq"
+                aria-selected="false" dir="rtl">الدفع والاشتراك</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="faqTabsContent-faq">
+            <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel"
+              aria-labelledby="general-tab-faq">
+              <div class="accordion" id="generalAccordion-faq" dir="rtl">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                  <h3>كيف أنشئ حساباً جديداً لبدء المذاكرة؟</h3>
+                  <div class="faq-content">
+                    <p>يمكنك إنشاء حساب جديد بسهولة من خلال الذهاب إلى صفحة التسجيل وملء البيانات الأساسية مثل
+                      الاسم، رقم الهاتف، والصف الدراسي. بعد تأكيد الحساب ستتمكن من الوصول إلى جميع
+                      المحاضرات والمذكرات المتاحة لمرحلتك الدراسية.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                  <h3>ما هي المتطلبات لتشغيل المحاضرات؟</h3>
+                  <div class="faq-content">
+                    <p>كل ما تحتاجه هو جهاز كمبيوتر، لابتوب، أو هاتف ذكي (موبايل) متصل بالإنترنت. المنصة تعمل
+                      بسهولة على جميع المتصفحات ولا تحتاج إلى أي برامج معقدة، فقط برنامج قراءة ملفات (PDF) 
+                      لفتح المذكرات والواجبات.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                  <h3>هل يمكنني الوصول للمنصة من أي جهاز؟</h3>
+                  <div class="faq-content">
+                    <p>نعم بالتأكيد! يمكنك الدخول إلى حسابك ومتابعة دروسك من أي جهاز وفي أي وقت يناسبك، 
+                      لكن يرجى العلم أنه للحفاظ على أمان حسابك، لا يُسمح بتسجيل الدخول من أكثر من جهازين 
+                      مختلفين لنفس الحساب.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                  <h3>هل يوجد امتحانات ومتابعة لمستوى الطالب؟</h3>
+                  <div class="faq-content">
+                    <p>نعم، هذا من أهم مميزاتنا! يوجد امتحان إلكتروني قصير (Quiz) بعد كل محاضرة، وامتحانات 
+                      شاملة على كل فصل، بالإضافة إلى متابعة دورية وتقارير أداء تُرسل إلى ولي الأمر لضمان 
+                      تفوق الطالب.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                  <h3>ماذا لو واجهتني مشكلة في فهم سؤال معين؟</h3>
+                  <div class="faq-content">
+                    <p>نوفر دعماً علمياً مستمراً! يمكنك إرسال أي سؤال يقف أمامك في الواجب أو الامتحانات 
+                      لفريق المساعدين (Assistants) عبر قنوات التواصل المخصصة للطلاب، وسيتم الرد عليك بشرح 
+                      مفصل للفكرة.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
+              <div class="accordion" id="accountAccordion-faq" dir="rtl">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                  <h3>ما هي الصفوف الدراسية المتاحة على المنصة؟</h3>
+                  <div class="faq-content">
+                    <p>توفر المنصة حالياً شرحاً متكاملاً لمنهج الفيزياء لطلاب المرحلة الثانوية 
+                      (الصف الأول، الثاني، والثالث الثانوي)، مع توفير بنك أسئلة ضخم يغطي كافة أفكار النظام الحديث.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                  <h3>هل يمكنني إعادة مشاهدة المحاضرة أكثر من مرة؟</h3>
+                  <div class="faq-content">
+                    <p>نعم، يمكنك مشاهدة المحاضرة المسجلة وإعادتها براحتك طوال فترة صلاحية اشتراكك 
+                      (سواء كان اشتراكاً شهرياً أو بالفصل الدراسي) لتتمكن من مراجعة أي جزء غير واضح متى شئت.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
+              <div class="accordion" id="paymentAccordion-faq" dir="rtl">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                  <h3>ما هي طرق الدفع المتاحة للاشتراك؟</h3>
+                  <div class="faq-content">
+                    <p>نحن نوفر طرق دفع سهلة ومتنوعة تناسب الجميع داخل مصر، مثل: فودافون كاش، أورانج كاش، 
+                      وجميع المحافظ الإلكترونية، بالإضافة إلى الدفع عبر ماكينات فوري (Fawry) والدفع بالبطاقات البنكية.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                  <h3>متى سيتم تفعيل الكورس بعد الدفع؟</h3>
+                  <div class="faq-content">
+                    <p>إذا قمت بالدفع عبر البطاقة البنكية أو فوري، يتم تفعيل الحساب فوراً. أما في حالة 
+                      التحويل عبر المحافظ الإلكترونية (مثل فودافون كاش)، يتم تفعيل الاشتراك بمجرد مراجعة 
+                      إيصال التحويل من قبل فريق الدعم (في غضون دقائق إلى ساعات قليلة).</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                  <h3>هل يوجد استرداد للمبلغ في حال عدم الرغبة في الإكمال؟</h3>
+                  <div class="faq-content">
+                    <p>نعم، يمكنك استرداد مبلغ الاشتراك خلال 48 ساعة من تاريخ الدفع، بشرط ألا تكون قد قمت 
+                      بفتح ومشاهدة أكثر من محاضرة واحدة، وذلك لضمان حقك وتجربة المنصة بكل اطمئنان.</p>
+                  </div>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. قسم الصورة والدعم (تم نقله للأسفل ليظهر أسفل الأسئلة في الموبايل) -->
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-sidebar">
+          <div class="faq-image">
+            <img src="assets/img/logo/512684761_2707696389402750_7589239329914583087_n.jpg" alt="FAQ Image" class="img-fluid" loading="lazy">
+          </div>
+          <div class="contact-box" dir="rtl">
+            <h3><i class="bi bi-headset"></i> هل تحتاج إلى مساعدة؟</h3>
+            <p>فريق الدعم الفني والعلمي جاهز لمساعدتك في أي سؤال يخص المنهج، المذكرات، أو طرق الاشتراك. تواصل معنا الآن!</p>
+            <a href="#" class="btn-contact">تواصل مع الدعم</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+        <!--  -->
+
+        <!-- Contact Section -->
+        <section id="contact" dir="rtl" class="contact section">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <span class="description-title">تواصل معنا</span>
+            <h2>تواصل معنا</h2>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+            <div class="contact-wrapper">
+              <div class="contact-info-panel">
+                <div class="contact-info-header">
+                  <h3>معلومات التواصل</h3>
+                  <p>
+                    يسعدنا تواصلك معنا في أي وقت. نحن هنا للإجابة على استفساراتك
+                    وتقديم الدعم الكامل قبل وأثناء وبعد الاشتراك.
+                  </p>
+                </div>
+
+                <div class="contact-info-cards">
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <i class="bi bi-pin-map-fill"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>موقعنا</h4>
+                      <p>القاهرة، جمهورية مصر العربية</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <i class="bi bi-envelope-open"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>راسلنا عبر البريد</h4>
+                      <p>info@example.com</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>اتصل بنا</h4>
+                      <p>+20 100 000 0000</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <i class="bi bi-clock-history"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>مواعيد العمل</h4>
+                      <p>من السبت إلى الخميس: 9 صباحًا – 7 مساءً</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links-panel">
+                  <h5>تابعنا على</h5>
+                  <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="form-container">
+                <h3>أرسل لنا رسالة</h3>
+                <p>
+                  اترك رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن.
+                  هدفنا هو مساعدتك واتخاذ الخطوة التالية بثقة.
+                </p>
+
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nameInput" name="name" placeholder="الاسم الكامل"
+                      required="">
+                    <label for="nameInput">الاسم الكامل</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="emailInput" name="email"
+                      placeholder="البريد الإلكتروني" required="">
+                    <label for="emailInput">البريد الإلكتروني</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="عنوان الرسالة"
+                      required="">
+                    <label for="subjectInput">عنوان الرسالة</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="رسالتك"
+                      style="height: 150px" required=""></textarea>
+                    <label for="messageInput">رسالتك</label>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">جاري الإرسال...</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">تم إرسال رسالتك بنجاح، شكرًا لتواصلك معنا.</div>
+                  </div>
+
+                  <div class="d-grid">
+                    <button type="submit" class="btn-submit">
+                      إرسال الرسالة ...<i class="bi bi-send-fill ms-2"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" dir="rtl" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">حسام سلطان</span>
+          </a>
+          <p>
+            منصة تعليمية متخصصة في شرح وتبسيط مناهج الفيزياء للمرحلة الثانوية. 
+            نهدف إلى بناء فهم عميق للمادة وتأسيس قوي يضمن لطلابنا التفوق والوصول للدرجة النهائية.
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>روابط مهمة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">كورساتنا</a></li>
+            <li><a href="#">شروط الاستخدام</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>صفوفنا الدراسية</h4>
+          <ul>
+            <li><a href="#">فيزياء الصف الأول الثانوي</a></li>
+            <li><a href="#">فيزياء الصف الثاني الثانوي</a></li>
+            <li><a href="#">فيزياء الصف الثالث الثانوي</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>تواصل معنا</h4>
+          <p>القاهرة</p>
+          <p>جمهورية مصر العربية</p>
+          <p class="mt-4"><strong>الدعم الفني:</strong> <span>+20 100 000 0000</span></p>
+          <p><strong>البريد الإلكتروني:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>جميع الحقوق محفوظة لمنصة</span> <strong class="px-1 sitename">الأستاذ حسام سلطان</strong></p>
+      <div class="credits">
+        تصميم وتطوير: ENG - HASSAN MOHAMED
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

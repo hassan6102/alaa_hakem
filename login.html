@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===========================================
+           General & Layout
+        =========================================== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            /* تدرج احترافي من الأسود للأزرق الداكن */
+            background: linear-gradient(135deg, #000000, #0a192f, #0d2754);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===========================================
+           Navbar
+        =========================================== */
+        .custom-navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .login-btn {
+            background: linear-gradient(135deg, #1d4ed8, #000000);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .login-btn:hover {
+            box-shadow: 0 4px 15px rgba(29, 78, 216, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* ===========================================
+           Card Wrapper & Mechanics
+        =========================================== */
+        .wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-switch {
+            position: relative;
+            width: 360px; /* عرض البطاقة */
+            height: 480px; /* طول البطاقة */
+        }
+
+        .switch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            perspective: 1000px;
+        }
+
+        .toggle {
+            display: none;
+        }
+
+        /* تصميم زر التبديل */
+        .slider {
+            position: absolute;
+            top: -50px;
+            width: 220px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            z-index: 10;
+        }
+
+        .slider::before {
+            content: 'Log in';
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translateY(-50%);
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .slider::after {
+            content: 'Sign up';
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .card-side {
+            position: absolute;
+            top: -50px;
+            left: 70px; /* منتصف المسافة للتبديل */
+            width: 110px;
+            height: 45px;
+            background: linear-gradient(135deg, #1d4ed8, #000000);
+            border-radius: 25px;
+            z-index: 9;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* حركة انسيابية */
+        }
+
+        .toggle:checked ~ .slider::before { color: rgba(255, 255, 255, 0.5); }
+        .toggle:checked ~ .slider::after { color: #fff; }
+        .toggle:checked ~ .card-side { left: 180px; }
+
+        /* ===========================================
+           Flip Card Inner Styles
+        =========================================== */
+        .flip-card__inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+        }
+
+        .toggle:checked ~ .flip-card__inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card__front, .flip-card__back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #ffffff; /* لون البطاقة أبيض */
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .flip-card__back {
+            transform: rotateY(180deg);
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #0a192f;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .flip-card__form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .flip-card__input {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 15px;
+            background: #f9fafb;
+            color: #111827;
+            box-sizing: border-box;
+            transition: 0.3s;
+            font-family: inherit;
+        }
+
+        .flip-card__input:focus {
+            outline: none;
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+            background: #ffffff;
+        }
+
+        .flip-card__btn {
+            margin-top: 10px;
+            padding: 14px;
+            background: linear-gradient(135deg, #1d4ed8, #000000);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: inherit;
+        }
+
+        .flip-card__btn:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
+        }
+
+        .message-box {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            min-height: 20px;
+        }
+        
+        /* تقليل المسافات في نموذج التسجيل لاحتواء الحقول */
+        .flip-card__back .flip-card__form { gap: 10px; }
+        .flip-card__back .title { margin-bottom: 15px; }
+        .flip-card__back .flip-card__input { padding: 12px 15px; }
+    </style>
+</head>
+<body>
+
+<nav class="custom-navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">HA</a>
+        <a href="index.html" class="login-btn">الرئيسية</a>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <div class="card-switch">
+        <label class="switch">
+            <input type="checkbox" class="toggle">
+            
+            <span class="slider"></span>
+            <span class="card-side"></span>
+
+            <div class="flip-card__inner">
+
+                <div class="flip-card__front">
+                    <div class="title">Log in</div>
+                    <form id="loginForm" class="flip-card__form">
+                        <input
+                            class="flip-card__input"
+                            name="email"
+                            placeholder="Email"
+                            type="email"
+                            required
+                        >
+                        <input
+                            class="flip-card__input"
+                            name="password"
+                            placeholder="Password"
+                            type="password"
+                            required
+                        >
+                        <button class="flip-card__btn" type="submit">
+                            Let's Go!
+                        </button>
+                    </form>
+                    <div id="loginMessage" class="message-box"></div>
+                </div>
+
+                <div class="flip-card__back">
+                    <div class="title">Sign up</div>
+                    <form id="registerForm" class="flip-card__form">
+                        <input
+                            class="flip-card__input"
+                            name="name"
+                            placeholder="Name"
+                            type="text"
+                            required
+                        >
+                        <input
+                            class="flip-card__input"
+                            name="email"
+                            placeholder="Email"
+                            type="email"
+                            required
+                        >
+                        <input
+                            class="flip-card__input"
+                            name="password"
+                            placeholder="Password"
+                            type="password"
+                            required
+                        >
+                        <input
+                            class="flip-card__input"
+                            name="password_confirmation"
+                            placeholder="Confirm Password"
+                            type="password"
+                            required
+                        >
+                        <button class="flip-card__btn" type="submit">
+                            Confirm!
+                        </button>
+                    </form>
+                    <div id="registerMessage" class="message-box"></div>
+                </div>
+
+            </div>
+        </label>
+    </div>
+</div>
+
+<script>
+const API_URL = "http://127.0.0.1:8000/api";
+
+/* ===========================================
+   LOGIN
+=========================================== */
+document.getElementById("loginForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const payload = {
+        email: formData.get("email"),
+        password: formData.get("password")
+    };
+
+    try {
+        const response = await fetch(`${API_URL}/login`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.message || "Login failed");
+        }
+
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("role", data.role);
+        localStorage.setItem("user", JSON.stringify(data.user));
+
+        document.getElementById("loginMessage").style.color = "#10b981"; // Green
+        document.getElementById("loginMessage").innerText = "Login successful! Redirecting...";
+
+        setTimeout(() => {
+            if (data.role === "Admin") {
+                window.location.href = "admin.html";
+            } else if (data.role === "Moderator") {
+                window.location.href = "moderator.html";
+            } else {
+                window.location.href = "client.html";
+            }
+        }, 1000);
+
+    } catch(error) {
+        document.getElementById("loginMessage").style.color = "#ef4444"; // Red
+        document.getElementById("loginMessage").innerText = error.message;
+    }
+});
+
+/* ===========================================
+   REGISTER
+=========================================== */
+document.getElementById("registerForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const payload = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        password: formData.get("password"),
+        password_confirmation: formData.get("password_confirmation")
+    };
+
+    try {
+        const response = await fetch(`${API_URL}/register`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            let msg = data.message;
+            if (data.errors) {
+                msg = Object.values(data.errors).flat().join("\n");
+            }
+            throw new Error(msg);
+        }
+
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("role", "User");
+        localStorage.setItem("user", JSON.stringify(data.user));
+
+        document.getElementById("registerMessage").style.color = "#10b981"; // Green
+        document.getElementById("registerMessage").innerText = "Registration successful! Redirecting...";
+
+        setTimeout(() => {
+            window.location.href = "client.html";
+        }, 1000);
+
+    } catch(error) {
+        document.getElementById("registerMessage").style.color = "#ef4444"; // Red
+        document.getElementById("registerMessage").innerText = error.message;
+    }
+});
+</script>
+
+</body>
+</html>
