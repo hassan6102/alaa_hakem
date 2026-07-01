@@ -32,38 +32,39 @@
 /* Global Colors - Physics Theme */
 /* Global Colors - Physics Theme */
 :root {
-  /* تدرج واضح من الأسود إلى الأزرق الكحلي المضيء (Deep Space Blue) */
-  --background-color: linear-gradient(135deg, #000000 0%, #0d2750 100%); 
+  /* خلفية بيضاء ناصعة ومريحة (Minimalist White & Blue) */
+  --background-color: #ffffff; 
   
-  --default-color: #e6f1ff; 
-  --heading-color: #ffffff; 
-  --accent-color: #0dcaf0; 
-  --surface-color: #0f1c33; 
+  --default-color: #334155; /* رمادي داكن مريح جداً لقراءة النصوص الطويلة */
+  --heading-color: #0f172a; /* لون يقترب من الأسود للعناوين عشان تبرز */
+  --accent-color: #2563eb; /* أزرق احترافي ونقي جداً (Primary Blue) */
+  --surface-color: #f8fafc; /* رمادي فاتح جداً مائل للأبيض للبطاقات والأسطح */
   --contrast-color: #ffffff; 
 }
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: #e6f1ff;
-  --nav-hover-color: #0dcaf0; 
-  --nav-mobile-background-color: rgba(4, 9, 20, 0.95); 
-  --nav-dropdown-background-color: rgba(4, 9, 20, 0.95);
-  --nav-dropdown-color: #a8b2d1; 
-  --nav-dropdown-hover-color: #0dcaf0;
+  --nav-color: #475569;
+  --nav-hover-color: #2563eb; 
+  --nav-mobile-background-color: rgba(255, 255, 255, 0.98); 
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #475569; 
+  --nav-dropdown-hover-color: #2563eb;
 }
 
 /* Color Presets */
 .light-background {
-  /* تدرج أزرق خفيف جداً للأقسام الداخلية عشان تفصل عن الخلفية الأساسية بشياكة */
-  --background-color: linear-gradient(135deg, #051124 0%, #0a1f3d 100%); 
-  --surface-color: #0f1c33;
+  /* تدرج خفيف جداً يدي تمييز للأقسام عن الخلفية الأساسية */
+  --background-color: #f1f5f9; 
+  --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: linear-gradient(135deg, #000000 0%, #050b14 100%);
-  --default-color: #e6f1ff;
+  /* لو حبيت تستخدم قسم غامق في النص يكسر التصميم (Dark Mode للقسم ده بس) */
+  --background-color: #0f172a;
+  --default-color: #cbd5e1;
   --heading-color: #ffffff;
-  --surface-color: #0a1324;
+  --surface-color: #1e293b;
   --contrast-color: #ffffff;
 }
 
@@ -71,6 +72,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
